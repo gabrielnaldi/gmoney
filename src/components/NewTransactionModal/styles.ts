@@ -47,7 +47,7 @@ export const Container = styled.form`
 
 export const NewTransactionTypeContent = styled.div`
   display: grid;
-  grid-template-columns: [INCOME] 1fr [OUTCOME] 1fr;
+  grid-template-columns: [DEPOSIT] 1fr [OUTCOME] 1fr;
   gap: 0.5rem;
   margin: 1rem 0;
 

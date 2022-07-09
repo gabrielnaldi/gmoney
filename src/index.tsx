@@ -18,7 +18,7 @@ createServer({
             type: "withdraw",
             category: 'comida',
             amount: 50,
-            date: new Date("2022/03/15 11:00:00")
+            createdAt: new Date("2022/03/15 11:00:00")
           },
           {
             id: 2,
@@ -26,7 +26,7 @@ createServer({
             type: "deposit",
             category: 'trabalho',
             amount: 5000,
-            date: new Date("2022/05/15 18:00:00")
+            createdAt: new Date("2022/05/15 18:00:00")
           }
         ]
       }

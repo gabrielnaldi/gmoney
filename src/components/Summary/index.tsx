@@ -1,6 +1,8 @@
 import { Container } from "./styles";
 import incomeImg from "../../assets/income.svg";
 import totalImg from '../../assets/total.svg'
+import { useContext } from "react";
+import { TransactionsContext, TransactionsProvider } from "../../TransactionsContext";
 
 interface SummaryProps {
   title: string;
@@ -9,6 +11,9 @@ interface SummaryProps {
 
 export function Summary(props: SummaryProps) {
   const { image, title } = props;
+
+  const transactions = useContext(TransactionsContext);
+  console.log(transactions);
 
   return (
     <Container>

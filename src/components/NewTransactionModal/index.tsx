@@ -16,7 +16,7 @@ export function NewTransactionModal({
   isOpen,
   onRequestClose,
 }: NewTransactionModalProps) {
-  const [typeActive, setTypeActive] = useState("income");
+  const [typeActive, setTypeActive] = useState("deposit");
   const [value, setValue] = useState(0);
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState('');
@@ -27,7 +27,7 @@ export function NewTransactionModal({
     setTitle('');
     setValue(0);
     setCategory('');
-    setTypeActive('income')
+    setTypeActive('deposit')
   }
 
   async function handleSubmitNewTransaction(event: FormEvent){
@@ -79,11 +79,11 @@ export function NewTransactionModal({
         <NewTransactionTypeContent>
           <RadioBox
             type="button"
-            isActive={typeActive === "income"}
-            onClick={() => setTypeActive("income")}
+            isActive={typeActive === "deposit"}
+            onClick={() => setTypeActive("deposit")}
             activeColor="green"
           >
-            <img src={incomeImg} alt="outcome" />
+            <img src={incomeImg} alt="Deposit" />
             <span>Entrada</span>
           </RadioBox>
           <RadioBox
